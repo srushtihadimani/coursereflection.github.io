@@ -1,0 +1,83 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header Styles */
+h1 {
+    text-align: center;
+    color: #4CAF50;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+/* Paragraph Styles */
+p {
+    margin: 15px 30px;
+    font-size: 16px;
+}
+
+/* List Styles */
+ul {
+    margin: 10px 30px;
+    padding: 0;
+    list-style-type: disc;
+}
+
+ul li {
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+/* Strong Text */
+strong {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+        margin: 10px 20px;
+    }
+
+    ul li {
+        font-size: 14px;
+    }
+}
+
+/* Section Spacing */
+section {
+    margin: 20px;
+}
+
+/* Links */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
