@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science Algorithms and Data Structures</title>
+</head>
+<body>
+    <h1>Understanding Common Problems in Computer Science</h1>
+
+    <h2>1. Kinds of Problems We See in Nature: (Iteration, Recursion, Backtracking)</h2>
+    <p>
+        - <strong>Iteration</strong>: This refers to the repeated execution of a block of code, typically used when a problem requires multiple steps to be performed in a sequence, such as traversing through a list or array. Iterative solutions are common in problems like summing elements or finding maximum/minimum values in an array.
+    </p>
+    <p>
+        - <strong>Recursion</strong>: A method where the solution to a problem depends on solving smaller instances of the same problem. Recursion is common in problems such as tree traversal, calculating factorials, or solving the Fibonacci sequence.
+    </p>
+    <p>
+        - <strong>Backtracking</strong>: This is a trial-and-error method where an algorithm tries different solutions and discards them if they do not meet the requirements. It's used in problems like the N-Queens problem, solving mazes, or finding valid paths in a graph.
+    </p>
+
+    <h2>2. Space and Time Efficiency</h2>
+    <p>
+        - <strong>Time Efficiency</strong>: Refers to how the running time of an algorithm increases as the size of the input grows. It's measured using Big-O notation. For example, an algorithm with O(n) time complexity means that the time to complete grows linearly with the size of the input.
+    </p>
+    <p>
+        - <strong>Space Efficiency</strong>: Refers to how much memory an algorithm consumes as the size of the input increases. For instance, an algorithm that needs O(n) space requires memory proportional to the input size.
+    </p>
+    <p>
+        - <strong>Why They Are Important</strong>: Time and space efficiency are critical for developing algorithms that scale well with large datasets and do not overload system resources.
+    </p>
+    <p>
+        - <strong>Different Classes of Problems and Orders of Growth:</strong>
+        <ul>
+            <li>O(1) - Constant time: The algorithm's performance is independent of the input size.</li>
+            <li>O(n) - Linear time: The performance grows linearly with the input size.</li>
+            <li>O(log n) - Logarithmic time: Common in divide-and-conquer algorithms like binary search.</li>
+            <li>O(n^2) - Quadratic time: Common in algorithms with nested loops, like bubble sort.</li>
+            <li>O(2^n) - Exponential time: Growth doubles with each additional input element, often seen in brute force solutions for combinatorial problems.</li>
+        </ul>
+    </p>
+
+    <h2>3. Takeaways from Chapter 2: Algorithm Design Principles</h2>
+    <p>
+        - <strong>Modularity</strong>: Break down complex problems into smaller, manageable subproblems to make the code more maintainable.
+    </p>
+    <p>
+        - <strong>Efficiency</strong>: Always choose the most time and space-efficient solution to optimize performance, especially as input sizes grow.
+    </p>
+    <p>
+        - <strong>Scalability</strong>: Ensure that algorithms can handle increasing input sizes without excessive time or space overhead.
+    </p>
+    <p>
+        - <strong>Reusability</strong>: Design solutions that can be reused in different scenarios or parts of the system, reducing redundancy.
+    </p>
+    <p>
+        - <strong>Abstraction</strong>: Hide complex implementation details behind simple interfaces to improve code readability and maintainability.
+    </p>
+
+    <h2>4. Hierarchical Data and Tree Data Structures</h2>
+    <p>
+        - <strong>Binary Search Tree (BST)</strong>: A binary tree where nodes follow the rule that left children are smaller, and right children are larger, enabling efficient search, insert, and delete operations.
+    </p>
+    <p>
+        - <strong>AVL Tree</strong>: A self-balancing BST that maintains balance by ensuring the heights of subtrees differ by no more than 1, ensuring O(log n) time for search, insert, and delete operations.
+    </p>
+    <p>
+        - <strong>2-3 Tree</strong>: A balanced search tree with nodes that have either 2 or 3 children, ensuring that all leaves are at the same depth.
+    </p>
+    <p>
+        - <strong>Red-Black Tree</strong>: A self-balancing BST that ensures balance with a color-based rule, providing O(log n) time complexity for most operations.
+    </p>
+    <p>
+        - <strong>Heap</strong>: A binary tree-based data structure used for priority queues, where the parent is either greater (max heap) or smaller (min heap) than its children.
+    </p>
+    <p>
+        - <strong>Trie</strong>: A tree-like structure used to store strings, enabling fast retrieval, especially in applications like auto-completion and dictionary lookups.
+    </p>
+
+    <h2>5. Need of Array Query Algorithms</h2>
+    <p>
+        - Array query algorithms optimize the process of answering queries on arrays, such as finding sums, averages, or other properties of subarrays.
+    </p>
+    <p>
+        - <strong>Applications</strong>: They are commonly used in databases, real-time systems, and algorithms that need fast access to large data sets.
+    </p>
+    <p>
+        - <strong>Principles</strong>: Algorithms like prefix sum and segment trees help answer range queries efficiently. For example, a prefix sum array allows constant-time range sum queries.
+    </p>
+
+    <h2>6. Tree vs Graphs and Their Traversals</h2>
+    <p>
+        - <strong>Tree</strong>: A tree is a connected, acyclic graph with a root node and hierarchical structure. Trees are efficient for problems involving hierarchy.
+    </p>
+    <p>
+        - <strong>Graph</strong>: A graph is a collection of nodes (vertices) connected by edges, where cycles may exist, and there is no inherent hierarchy.
+    </p>
+    <p>
+        - <strong>Traversals</strong>:
+        <ul>
+            <li><strong>Tree Traversals</strong>: Pre-order, in-order, post-order (depth-first traversal).</li>
+            <li><strong>Graph Traversals</strong>: Breadth-first search (BFS), depth-first search (DFS).</li>
+        </ul>
+    </p>
+    <p>
+        - <strong>Applications</strong>: Trees are used in hierarchical problems like file systems and decision trees. Graphs are used in networking, social media, routing algorithms, and pathfinding.
+    </p>
+
+    <h2>7. Sorting and Searching Algorithms</h2>
+    <p>
+        - <strong>Sorting</strong>:
+        <ul>
+            <li><strong>Bubble Sort</strong>: O(n^2) – Inefficient for large datasets.</li>
+            <li><strong>Merge Sort</strong>: O(n log n) – Divide-and-conquer algorithm that is efficient for large datasets.</li>
+            <li><strong>Quick Sort</strong>: O(n log n) average time – Often faster in practice than merge sort due to better cache performance.</li>
+        </ul>
+    </p>
+    <p>
+        - <strong>Searching</strong>:
+        <ul>
+            <li><strong>Linear Search</strong>: O(n) – Suitable for unsorted arrays.</li>
+            <li><strong>Binary Search</strong>: O(log n) – Efficient for searching in sorted arrays.</li>
+            <li><strong>Hashing</strong>: O(1) on average – Extremely fast for lookups, often used in hash tables.</li>
+        </ul>
+    </p>
+    <p>
+        - <strong>Real-World Connection</strong>: Sorting is essential in applications like database indexing, while searching algorithms are used in a variety of systems requiring fast data retrieval.
+    </p>
+
+    <h2>8. Importance of Graph Algorithms: Spanning Trees and Shortest Paths</h2>
+    <p>
+        - <strong>Spanning Trees</strong>: A subgraph that connects all vertices of a graph without cycles and with the minimum number of edges. Algorithms like Kruskal’s and Prim’s are used to find minimum spanning trees (MST).
+    </p>
+    <p>
+        - <strong>Shortest Path</strong>: Algorithms like Dijkstra’s and Bellman-Ford help find the shortest path between nodes in a graph, which is crucial in applications like routing and network optimization.
+    </p>
+
+    <h2>9. Different Algorithm Design Techniques</h2>
+    <p>
+        - <strong>Divide and Conquer</strong>: Solving a problem by breaking it down into smaller subproblems, solving each one independently, and combining their solutions.
+    </p>
+    <p>
+        - <strong>Greedy Algorithms</strong>: Making the locally optimal choice at each step with the hope of finding the global optimum (e.g., Prim’s MST algorithm).
+    </p>
+    <p>
+        - <strong>Dynamic Programming</strong>: Solving problems by breaking them down into overlapping subproblems and storing the results to avoid redundant work (e.g., Fibonacci sequence).
+    </p>
+    <p>
+        - <strong>Backtracking</strong>: Trying different solutions and abandoning a path as soon as it is determined to be invalid (e.g., solving the N-Queens problem).
+    </p>
+    <p>
+        - <strong>Branch and Bound</strong>: An optimization technique that eliminates large sets of unpromising solutions, improving performance in certain combinatorial problems.
+    </p>
+
+</body>
+</html>
